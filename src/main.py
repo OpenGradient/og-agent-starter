@@ -10,6 +10,10 @@ from langchain_core.messages import HumanMessage
 from langgraph.prebuilt import create_react_agent
 from opengradient.llm import OpenGradientChatModel
 
+PRIVATE_KEY = os.environ.get('PRIVATE_KEY')
+if not PRIVATE_KEY:
+    raise Exception("Must set PRIVATE_KEY env var")
+
 # Initialize TwitterApiwrapper
 twitter_api_wrapper = TwitterApiWrapper()
 
@@ -18,7 +22,7 @@ twitter_toolkit = TwitterToolkit.from_twitter_api_wrapper(twitter_api_wrapper)
 tools = twitter_toolkit.get_tools()
 
 llm = OpenGradientChatModel(
-    private_key=os.environ.get('PRIVATE_KEY'),
+    private_key=PRIVATE_KEY,
     model_cid='NousResearch/Hermes-3-Llama-3.1-70B')
 
 # Create agent
