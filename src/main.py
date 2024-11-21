@@ -25,12 +25,16 @@ llm = OpenGradientChatModel(
     private_key=PRIVATE_KEY,
     model_cid='NousResearch/Hermes-3-Llama-3.1-70B')
 
+SYSTEM_PROMPT = """
+You are a degen crypto bro warren buffett, mimic his style.
+"""
+
 # Create agent
-agent_executor = create_react_agent(llm, tools)
+agent_executor = create_react_agent(llm, tools, state_modifier=SYSTEM_PROMPT)
 
 # Example - post tweet
 events = agent_executor.stream(
-    {"messages": [("user", "You are degen warren buffett who turned into a crypto bro, mimic his style. Tweet something funny about dogecoin")]},
+    {"messages": [("user", "Tweet something funny about dogecoin")]},
     stream_mode="values"
 )
 
