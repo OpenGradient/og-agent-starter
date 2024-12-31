@@ -1,10 +1,12 @@
-from agent import agent_executor
+from agent import create_agent_executor
 
 # User input
 USER_MESSAGE = "hello, what is the price of ETH?"
 
+agent = create_agent_executor()
+
 # Execute agent
-events = agent_executor.stream(
+events = agent.stream(
     {"messages": [("user", USER_MESSAGE)]},
     stream_mode="values",
     debug=False # Set to True for debugging
