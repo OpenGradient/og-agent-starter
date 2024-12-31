@@ -1,19 +1,20 @@
 import os
+
 from agent import og_agent
 from swarm import Swarm
 from opengradient.llm import openai_adapter
 
+# User input
+USER_PROMPT = "hello, what is the price of ETH?"
+
 if not os.environ.get("PRIVATE_KEY"):
     raise Exception("Please set PRIVATE_KEY to your OpenGradient private key")
 
-client = Swarm(client=openai_adapter(os.environ.get("PRIVATE_KEY")))
+swarm_client = Swarm(client=openai_adapter(os.environ.get("PRIVATE_KEY")))
 
-# change this prompt to make the agent do different things
-USER_PROMPT = "Create a pepe frog token, and post an announcement about it"
-
-response = client.run(
+response = swarm_client.run(
     agent=og_agent,
-    debug=False,
+    debug=False, # Set to true for debugging agent
     # Instruction for the agent on what to do
     messages=[{
         "role": "user", 
@@ -21,4 +22,5 @@ response = client.run(
     }],
 )
 
+# Print result
 print(response.messages[-1]["content"])

@@ -28,5 +28,3 @@ llm = langchain_adapter(
 
 # Create agent
 agent_executor = create_react_agent(llm, tools, AGENT_SYSTEM_PROMPT)
-
-__all__ = [agent_executor]
