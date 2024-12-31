@@ -6,7 +6,7 @@ from opengradient.llm import openai_adapter
 from agent import create_agent
 
 # User input
-USER_PROMPT = "hello, what is the price of ETH?"
+USER_PROMPT = "post something serious"
 
 private_key = os.environ.get('PRIVATE_KEY')
 if not private_key:
@@ -22,7 +22,7 @@ response = swarm_client.run(
         "role": "user", 
         "content": USER_PROMPT,
     }],
-    debug=False, # Set to true for debugging agent
+    debug=True, # Set to true for debugging agent
 )
 
 # Print result

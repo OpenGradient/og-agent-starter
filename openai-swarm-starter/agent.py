@@ -7,7 +7,7 @@ LLM_MODEL = 'meta-llama/Llama-3.1-70B-Instruct'
 
 def create_agent():
     og_agent = Agent(
-        name="Degen Warren Buffett",
+        name="Social Media Manager",
         instructions=AGENT_SYSTEM_PROMPT,
         functions=create_agent_toolkit(),
         model=LLM_MODEL,

@@ -1,7 +1,7 @@
 from agent import create_agent_executor
 
 # User input
-USER_MESSAGE = "hello, what is the price of ETH?"
+USER_MESSAGE = "post something serious"
 
 agent = create_agent_executor()
 
