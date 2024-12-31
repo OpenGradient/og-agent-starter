@@ -7,7 +7,7 @@ import os
 
 from langchain_core.messages import HumanMessage
 from langgraph.prebuilt import create_react_agent
-from opengradient.llm import OpenGradientChatModel
+from opengradient.llm import langchain_adapter
 
 from prompts import AGENT_SYSTEM_PROMPT
 
@@ -22,7 +22,7 @@ twitter_api_wrapper = TwitterApiWrapper()
 twitter_toolkit = TwitterToolkit.from_twitter_api_wrapper(twitter_api_wrapper)
 tools = twitter_toolkit.get_tools()
 
-llm = OpenGradientChatModel(
+llm = langchain_adapter(
     private_key=PRIVATE_KEY,
     model_cid='meta-llama/Llama-3.1-70B-Instruct')
 
