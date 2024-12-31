@@ -1,6 +1,5 @@
 import os
-from og_adapter import OGClient
-from agent import memecoin_agent
+from agent import og_agent
 from swarm import Swarm
 
 if not os.environ.get("PRIVATE_KEY"):
@@ -12,7 +11,7 @@ client = Swarm(client=OGClient(os.environ.get("PRIVATE_KEY")))
 USER_PROMPT = "Create a pepe frog token, and post an announcement about it"
 
 response = client.run(
-    agent=memecoin_agent,
+    agent=og_agent,
     debug=False,
     # Instruction for the agent on what to do
     messages=[{
