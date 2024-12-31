@@ -8,10 +8,11 @@ from agent import create_agent
 # User input
 USER_PROMPT = "hello, what is the price of ETH?"
 
-if not os.environ.get("PRIVATE_KEY"):
-    raise Exception("Please set PRIVATE_KEY to your OpenGradient private key")
+private_key = os.environ.get('PRIVATE_KEY')
+if not private_key:
+    raise Exception("Must set PRIVATE_KEY env var")
 
-swarm_client = Swarm(client=openai_adapter(os.environ.get("PRIVATE_KEY")))
+swarm_client = Swarm(client=openai_adapter(private_key))
 agent = create_agent()
 
 response = swarm_client.run(
