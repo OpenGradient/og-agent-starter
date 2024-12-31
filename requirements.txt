@@ -16,6 +16,7 @@ cdp-langchain==0.0.7
 cdp-sdk==0.10.3
 certifi==2024.8.30
 cffi==1.17.1
+cfgv==3.4.0
 charset-normalizer==3.3.2
 ckzg==2.0.1
 cleo==2.1.0
@@ -28,6 +29,7 @@ cryptography==43.0.1
 cytoolz==0.12.3
 distlib==0.3.8
 distro==1.9.0
+docstring_parser==0.16
 dulwich==0.21.7
 ecdsa==0.19.0
 ed25519-blake2b==1.4.1
@@ -60,8 +62,12 @@ hexbytes==1.2.1
 httpcore==1.0.7
 httpx==0.27.2
 httpx-sse==0.4.0
+identify==2.6.4
 idna==3.10
+iniconfig==2.0.0
+instructor==1.7.2
 jaraco.classes==3.4.0
+Jinja2==3.1.5
 jiter==0.7.1
 jsonpatch==1.33
 jsonpointer==3.0.0
@@ -75,9 +81,13 @@ langgraph==0.2.50
 langgraph-checkpoint==2.0.4
 langgraph-sdk==0.1.36
 langsmith==0.1.143
+markdown-it-py==3.0.0
+MarkupSafe==3.0.2
+mdurl==0.1.2
 more-itertools==10.5.0
 msgpack==1.1.0
 multidict==6.1.0
+nodeenv==1.9.1
 numpy==1.26.4
 oauthlib==3.2.2
 openai==1.54.4
@@ -91,6 +101,8 @@ pexpect==4.9.0
 pkce==1.0.3
 pkginfo==1.11.1
 platformdirs==4.3.6
+pluggy==1.5.0
+pre_commit==4.0.1
 proto-plus==1.24.0
 protobuf==5.28.2
 ptyprocess==0.7.0
@@ -102,9 +114,11 @@ pycparser==2.22
 pycryptodome==3.20.0
 pydantic==2.9.2
 pydantic_core==2.23.4
+Pygments==2.18.0
 PyJWT==2.9.0
 PyNaCl==1.5.0
 pyproject_hooks==1.2.0
+pytest==8.3.4
 python-dateutil==2.9.0.post0
 python-jwt==4.1.0
 pytz==2024.2
@@ -115,6 +129,7 @@ regex==2024.9.11
 requests==2.32.3
 requests-oauthlib==1.3.1
 requests-toolbelt==1.0.0
+rich==13.9.4
 rlp==4.0.1
 rsa==4.9
 shellingham==1.5.4
@@ -122,6 +137,7 @@ six==1.16.0
 sniffio==1.3.1
 SQLAlchemy==2.0.36
 standard-imghdr==3.13.0
+swarm @ git+ssh://git@github.com/openai/swarm.git@9db581cecaacea0d46a933d6453c312b034dbf47
 tenacity==9.0.0
 tiktoken==0.8.0
 tomlkit==0.13.2
@@ -130,10 +146,12 @@ tqdm==4.67.0
 trove-classifiers==2024.9.12
 tweepy==4.14.0
 twitter-langchain==0.0.5
+typer==0.15.1
 types-requests==2.32.0.20240914
 typing_extensions==4.12.2
 tzdata==2024.2
 urllib3==2.2.3
+virtualenv==20.28.0
 web3==7.2.0
 websockets==13.0.1
 xattr==1.1.0
