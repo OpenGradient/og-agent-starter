@@ -1,1 +1,1 @@
-# og-agent
+# OpenGradient Agent Starter Kit
