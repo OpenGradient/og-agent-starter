@@ -22,7 +22,7 @@ response = swarm_client.run(
         "role": "user", 
         "content": USER_PROMPT,
     }],
-    debug=True, # Set to true for debugging agent
+    debug=False, # Set to true for debugging agent
 )
 
 # Print result
