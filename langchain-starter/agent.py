@@ -9,7 +9,7 @@ from langchain_core.messages import HumanMessage
 from langgraph.prebuilt import create_react_agent
 from opengradient.llm import OpenGradientChatModel
 
-from prompts import KAKEGURUI_PROMPT
+from prompts import AGENT_SYSTEM_PROMPT
 
 PRIVATE_KEY = os.environ.get('PRIVATE_KEY')
 if not PRIVATE_KEY:
@@ -27,16 +27,6 @@ llm = OpenGradientChatModel(
     model_cid='meta-llama/Llama-3.1-70B-Instruct')
 
 # Create agent
-agent_executor = create_react_agent(llm, tools)
+agent_executor = create_react_agent(llm, tools, AGENT_SYSTEM_PROMPT)
 
-# Example - post tweet
-events = agent_executor.stream(
-    {"messages": [
-        ("system", KAKEGURUI_PROMPT),
-        ("user", "hello")]},
-    stream_mode="values",
-    debug=False
-)
-
-for event in events:
-    event["messages"][-1].pretty_print()
+__all__ = [agent_executor]
