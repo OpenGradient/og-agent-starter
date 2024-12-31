@@ -11,8 +11,8 @@ Both agents are equipped with Coinbase's AgentKit for on-chain transactions as w
 
 ## LangChain Agent Starter
 
-See docs in [`langchain-starter`](./langchain-starter/).
+See docs in [`langchain-starter`](./langchain-starter/)
 
 ## OpenAI Agent Starter
 
-See docs in [`openai-swarm-starter`](./openai-swarm-starter/).
+See docs in [`openai-swarm-starter`](./openai-swarm-starter/)
