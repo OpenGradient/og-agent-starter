@@ -7,7 +7,7 @@ We provide 2 starter kits:
 1. Uses `LangChain`
 2. Uses OpenAI's `Swarm` framework
 
-Both agents are equipped with Coinbase's AgentKit for on-chain transactions as well as a Twitter toolbox for read and write access to X.
+Both agents are equipped with Coinbase's [AgentKit](https://github.com/coinbase/cdp-agentkit) for on-chain transactions as well as a Twitter toolbox for read and write access to X.
 
 ## LangChain Agent Starter
 
