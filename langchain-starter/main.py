@@ -1,7 +1,12 @@
+import os
+
 from agent import create_agent_executor
+import opengradient as og
+
+og.init(private_key=os.environ.get('PRIVATE_KEY'), email=None, password=None)
 
 # User input
-USER_MESSAGE = "post something serious"
+USER_MESSAGE = "What is the price forecast for SUI?"
 
 agent = create_agent_executor()
 
@@ -9,7 +14,7 @@ agent = create_agent_executor()
 events = agent.stream(
     {"messages": [("user", USER_MESSAGE)]},
     stream_mode="values",
-    debug=False # Set to True for debugging
+    debug=True # Set to True for debugging
 )
 
 # Print reasoning and result
