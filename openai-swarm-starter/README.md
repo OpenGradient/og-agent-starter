@@ -9,6 +9,18 @@ Combines OpenGradient's verifiable inference and advanced ML tools with OpenAI's
 - The agent itself is defined (using the tools and prompts) in `agent.py`
 - The main function for executing the agent is in `main.py`
 
+## Agent
+
+The agent is equipped by the following tools (from on the `twitter_langchain` library):
+
+- AccountDetailsAction
+- AccountMentionsAction
+- PostTweetAction
+- PostTweetReplyAction
+- TwitterAction
+
+As well as an OpenGradient AlphaSense tool for Sui price prediction.
+
 ## Setup
 
 1. Dependencies are defined in `requirements.txt`, run `pip install -r requirements.txt` to install all dependencies. We recommend using virtualenv.
