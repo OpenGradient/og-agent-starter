@@ -5,8 +5,7 @@ from twitter_langchain import (
     TwitterToolkit
 )
 from langchain_core.tools import BaseTool
-from pydantic import BaseModel
-from opengradient.mltool import create_og_model_tool, ToolType
+from opengradient.mltools import create_og_model_tool, ToolType
 
 
 # Define the tools the agent can use
