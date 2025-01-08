@@ -16,6 +16,6 @@ Combines OpenGradient's verifiable inference and advanced ML tools with LangChai
 
 ## Execute
 
-To run the agent, simply run `python main.py`
+To execute the agent, simply run `python main.py`
 
-Next, you can add new tools, prompts, etc to customize the agent's behaviour.
+Next, you can add new tools, prompts, user input etc to customize the agent's behaviour.
