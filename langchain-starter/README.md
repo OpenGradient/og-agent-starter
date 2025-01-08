@@ -19,7 +19,7 @@ The agent is equipped by the following tools (from on the `twitter_langchain` li
 - PostTweetReplyAction
 - TwitterAction
 
-As well as an OpenGradient AlphaSense tool for ETH price prediction.
+As well as an OpenGradient AlphaSense tool for Sui price prediction.
 
 ## Setup
 
