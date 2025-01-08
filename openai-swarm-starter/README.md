@@ -22,7 +22,7 @@ The tools do not actually execute any action, you can make a functional implemen
 
 1. Dependencies are defined in `requirements.txt`, run `pip install -r requirements.txt` to install all dependencies. We recommend using virtualenv.
 2. You'll need an OpenGradient token in order to run inferences. You can use the `opengradient` CLI to create it, read more on our [official docs](https://docs.opengradient.ai/developers/sdk/#credentials-setup).
-3. Make a copy of the `.env.sh.template` file from the root folder and rename to `.env.sh` in the `openai-swarm-starter` folder. Fill in with your OpenGradient token as well as Twitter API keys.
+3. Make a copy of the `.env.sh.template` file in the root folder and rename to `.env.sh`. Fill in with your OpenGradient token as well as Twitter API keys.
 
 ## Execute
 

@@ -7,10 +7,10 @@ from opengradient.llm import openai_adapter
 from agent import create_agent
 
 # Load environment variables from .env file
-load_dotenv()
+load_dotenv("../.env.sh")
 
 # User input
-USER_PROMPT = "post something serious"
+USER_PROMPT = "post something funny"
 
 private_key = os.environ.get('PRIVATE_KEY')
 if not private_key:
