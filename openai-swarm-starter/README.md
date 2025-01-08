@@ -11,15 +11,12 @@ Combines OpenGradient's verifiable inference and advanced ML tools with OpenAI's
 
 ## Agent
 
-The agent is equipped by the following tools (from on the `twitter_langchain` library):
+The agent is equipped with some tools intended only for demonstration:
 
-- AccountDetailsAction
-- AccountMentionsAction
-- PostTweetAction
-- PostTweetReplyAction
-- TwitterAction
+- tweet_post
+- swap_tokens
 
-As well as an OpenGradient AlphaSense tool for Sui price prediction.
+The tools do not actually execute any action, you can make a functional implementation using libraries like Coinbase CDP or tweepy.
 
 ## Setup
 
