@@ -26,6 +26,6 @@ The tools do not actually execute any action, you can make a functional implemen
 
 ## Execute
 
-To execute the agent, simply run `python main.py`
+To execute the agent, simply run `python main.py <your-instruction-here>`. For example, `python main.py "tweet something funny"`
 
 Next, you can add new tools, prompts, user input etc to customize the agent's behaviour.
