@@ -11,8 +11,8 @@ Both agents are equipped with Coinbase's [AgentKit](https://github.com/coinbase/
 
 ## LangChain Agent Starter Kit
 
-Get started in [`langchain-starter`](./langchain-starter/)
+Get started with LangChain agents in [`langchain-starter`](./langchain-starter/)
 
 ## OpenAI Agent Starter Kit
 
-Get started in [`openai-swarm-starter`](./openai-swarm-starter/)
+Get started with Swarm agents in [`openai-swarm-starter`](./openai-swarm-starter/)

@@ -11,12 +11,11 @@ Combines OpenGradient's verifiable inference and advanced ML tools with LangChai
 
 ## Setup
 
-Dependencies are defined in `requirements.txt`, run `pip install -r requirements.txt` to install all dependencies. We recommend using virtualenv.
-
-You'll need an OpenGradient token in order to run inferences. You can use the `opengradient` CLI to create it, read more on our [official docs](https://docs.opengradient.ai/developers/sdk/#credentials-setup).
+- Dependencies are defined in `requirements.txt`, run `pip install -r requirements.txt` to install all dependencies. We recommend using virtualenv.
+- You'll need an OpenGradient token in order to run inferences. You can use the `opengradient` CLI to create it, read more on our [official docs](https://docs.opengradient.ai/developers/sdk/#credentials-setup).
 
 ## Execute
 
 To run the agent, simply run `python main.py`
 
-Once the agent starts, you can add new tools, prompts, etc to customize it's behaviour.
+Next, you can add new tools, prompts, etc to customize the agent's behaviour.
