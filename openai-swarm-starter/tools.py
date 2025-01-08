@@ -4,7 +4,7 @@ def create_agent_toolkit():
     return [post_tweet, swap_token]
 
 def post_tweet(content: str):
-    """Posts a tweet with the given conent."""
+    """Sends a tweet with the given text"""
 
     print(f"Posted tweet: {content}")
 
