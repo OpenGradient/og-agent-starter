@@ -1,7 +1,11 @@
 import os
 
+from dotenv import load_dotenv
 from agent import create_agent_executor
 import opengradient as og
+
+# Load environment variables from .env file
+load_dotenv()
 
 og.init(private_key=os.environ.get('PRIVATE_KEY'), email=None, password=None)
 

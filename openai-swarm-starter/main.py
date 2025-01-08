@@ -1,9 +1,13 @@
 import os
 
+from dotenv import load_dotenv
 from swarm import Swarm
 from opengradient.llm import openai_adapter
 
 from agent import create_agent
+
+# Load environment variables from .env file
+load_dotenv()
 
 # User input
 USER_PROMPT = "post something serious"
