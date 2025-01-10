@@ -1,6 +1,7 @@
 cdp-sdk>=0.12.0
 opengradient>=0.3.21
 langgraph>=0.2.60
-twitter_langchain>=0.0.6
+langchain-community>=0.3.14
 python-dotenv>=1.0.1
+wikipedia>=1.4.0
 swarm @ git+ssh://git@github.com/openai/swarm.git@9db581cecaacea0d46a933d6453c312b034dbf47

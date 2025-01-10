@@ -21,7 +21,7 @@ def create_agent_executor():
     # Create agent
     agent_executor = create_react_agent(
         model=llm, 
-        tools=create_agent_toolkit(), 
-        state_modifier=AGENT_SYSTEM_PROMPT)
+        tools=create_agent_toolkit(),
+        messages_modifier=AGENT_SYSTEM_PROMPT)
 
     return agent_executor
