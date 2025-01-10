@@ -11,7 +11,7 @@ Both agents are equipped with Coinbase's [AgentKit](https://github.com/coinbase/
 
 ## Documentation
 
-Read more on OpenGradient's Verifiable AI Agent Stack on [docs.opengradient.ai](https://docs.opengradient.ai/developers/agents/).
+Read more on OpenGradient's Verifiable AI Agent Stack on [docs.opengradient.ai](https://docs.opengradient.ai/developers/agents/)
 
 ## LangChain Agent Starter Kit
 
