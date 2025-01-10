@@ -11,15 +11,10 @@ Combines OpenGradient's verifiable inference and advanced ML tools with LangChai
 
 ## Agent
 
-The agent is equipped by the following tools (from on the `twitter_langchain` library):
+The agent is equipped by the following tools:
 
-- AccountDetailsAction
-- AccountMentionsAction
-- PostTweetAction
-- PostTweetReplyAction
-- TwitterAction
-
-As well as an OpenGradient AlphaSense tool for Sui price prediction.
+- Wikipedia search tool for looking up articles
+- OpenGradient AlphaSense tool for Sui price prediction.
 
 ## Setup
 
@@ -29,6 +24,6 @@ As well as an OpenGradient AlphaSense tool for Sui price prediction.
 
 ## Execute
 
-To execute the agent, simply run `python main.py <your-instruction-here>`. For example, `python main.py "tweet something funny"`
+To execute the agent, simply run `python main.py <your-instruction-here>`. For example, `python main.py "what is the size of NYC"`
 
 Next, you can add new tools, prompts, user input etc to customize the agent's behaviour.
