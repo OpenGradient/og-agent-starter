@@ -10,7 +10,7 @@ def create_agent_toolkit() -> List[BaseTool]:
     tools = []
 
     wikipedia = WikipediaQueryRun(api_wrapper=WikipediaAPIWrapper())
-    # tools.append(wikipedia)
+    tools.append(wikipedia)
 
     # Add Spot Forecast model
     tools.append(create_og_model_tool(
