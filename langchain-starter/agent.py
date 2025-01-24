@@ -1,9 +1,9 @@
 import os
 
-from langchain_core.messages import HumanMessage
 from langgraph.prebuilt import create_react_agent
 
 from opengradient.llm import langchain_adapter
+from opengradient import LLM
 
 from prompts import AGENT_SYSTEM_PROMPT
 from tools import create_agent_toolkit
@@ -16,7 +16,7 @@ def create_agent_executor():
     # Initialize LLM
     llm = langchain_adapter(
         private_key=private_key,
-        model_cid='meta-llama/Llama-3.1-70B-Instruct')
+        model_cid=LLM.QWEN_2_5_72B_INSTRUCT)
 
     # Create agent
     agent_executor = create_react_agent(
