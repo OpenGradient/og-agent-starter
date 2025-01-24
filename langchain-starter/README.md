@@ -22,6 +22,17 @@ The agent is equipped by the following tools:
 2. You'll need an OpenGradient token in order to run inferences. You can use the `opengradient` CLI to create it, read more on our [official docs](https://docs.opengradient.ai/developers/sdk/#credentials-setup).
 3. Make a copy of the `.env.sh.template` file in the root folder and rename to `.env.sh`. Fill in with your OpenGradient token as well as Twitter API keys.
 
+Note: If you run into git permission denied error messages, please generate a Github SSH key.
+```
+ssh-keygen -t ed25519 -C "your_email@example.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+```
+Then proceed to add the output of the below command to your Github SSH keys in the settings page.
+```
+cat ~/.ssh/id_ed25519.pub
+``` 
+
 ## Execute
 
 To execute the agent, simply run `python main.py <your-instruction-here>`. For example, `python main.py "what is the size of NYC"`
